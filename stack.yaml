@@ -1,0 +1,8 @@
+resolver: lts-12.1
+
+packages:
+- .
+
+extra-deps:
+- ./lib/GPipe-Core/GPipe-Core
+- ./lib/GPipe-GLFW/GPipe-GLFW

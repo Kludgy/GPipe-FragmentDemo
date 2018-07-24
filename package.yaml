@@ -1,0 +1,46 @@
+name:                fragdemolib
+version:             0.1.0.0
+github:              "kludgy/GPipe-FragmentDemo"
+license:             BSD3
+author:              "Darren Grant"
+maintainer:          "dedgrant@gmail.com"
+copyright:           "2018 Darren Grant"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+description:         Please see the README on GitHub at <https://github.com/kludgy/GPipe-FragmentDemo#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- lens
+- GPipe
+- GPipe-GLFW
+
+library:
+  source-dirs: src
+
+executables:
+  fragdemo:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2
+    dependencies:
+    - fragdemolib
+
+tests:
+  fragdemotest:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2
+    dependencies:
+    - fragdemolib

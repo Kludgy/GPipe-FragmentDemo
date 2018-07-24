@@ -1,0 +1,6 @@
+[submodule "lib/GPipe-GLFW"]
+	path = lib/GPipe-GLFW
+	url = https://github.com/Kludgy/GPipe-GLFW
+[submodule "lib/GPipe-Core"]
+	path = lib/GPipe-Core
+	url = https://github.com/Kludgy/GPipe-Core
